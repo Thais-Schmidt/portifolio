@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* cores*/
+    --color-one: #BC5966;
+    --color-two: #DFD899;
+    --color-tree: #F7F5D6;
+    --color-four: #C8C2B2;
+    --color-five: #744855;
+    --color-six: #7AC3B7;
+    --color-seven: #286A6E;
+    --color-eight: #E4764F;
+    --color-nine: #F7F7F8;
+
+    /*fontes*/ 
+    --font-famyly: "Andale Mono", monospace;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--color-nine);
+
+    min-height: 100%;
+    width: 100%;
+    
+    display: flex;
+}
+
+header {
+    background-color: var(--color-one);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-family: var(--font-famyly);
+
+    z-index: 100;
+}
+
+.portifolio {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: var(--font-famyly);
+
+    text-decoration: none;
+
+    color: var(--color-nine);
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-nine);
+    text-decoration: none;
+}
+
+
+/* dropdown */
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: var(--color-nine);
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    height: 180px;
+    width: 100%;
+    background-color: var(--color-one);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: var(--color-nine);
+    color: var(--color-one);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+/*fim do drop down*/
+
+/* footer*/ 
+
+footer {
+    background: var(--color-one);
+    color: var(--color-nine);
+
+    width: 100%;
+    margin-top: auto;
+    
+    font-family: var(--font-famyly);
+    align-items: center;
+    text-align: center;
+}
+
+p{
+    padding: 20px 100px;
+}

@@ -1,0 +1,14 @@
+body{
+    --top-color: #C1F7DC;
+    --bottom-color: #BDA0BC;
+    --my-gradiente:linear-gradient(
+        var(--top-color),
+        var(--bottom-color)
+    );
+
+    height: 100vh;
+    background: var(--my-gradiente);
+}
+
+/*desse jeito a gente fez um gradiente no corpo do body utilizando as duas cores, top e bottom.
+Mas elas só podem ser utilizadas DENTRO DO BODY.

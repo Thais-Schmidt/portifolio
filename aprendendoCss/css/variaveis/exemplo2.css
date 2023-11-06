@@ -1,0 +1,21 @@
+/* :root{
+    --button-unit: 1rem;
+    --button-unit-small: 0.5rem;
+    --button-unit-large: 1.5rem;
+} */
+
+/* NÃO ALTERE A VARIAVEL, ALTERE O VALOR */
+
+.c-button {
+    --button-unit: 1rem;
+    padding: var(--button-unit);
+}
+
+.c-button--small {
+    --button-unit: 0.5rem;
+}
+
+.c-button--large {
+    --button-unit: 1.5rem;
+}
+

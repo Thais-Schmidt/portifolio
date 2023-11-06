@@ -1,0 +1,36 @@
+/* "global" */
+
+:root{
+    --module-size: 1rem;
+    --primary-color: tomato;
+    --misturado-color: yellow;
+    --font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: var(--primary-color);
+}
+
+/* escopdo */
+
+button {
+    --unit: 2rem; /* 1rem é igual ao tamanho padrão da fonte da raiz(root) do documento, 
+    normalmente 16px, logo 1rem é igual à 16px. */
+    padding: var(--unit);
+}
+
+
+/* Misturado */
+
+.misturado{ /* botao de class "misturado" */
+    --button-color: #ddb177;
+
+    all: initial; /* redefine todas as propriedades do elemento para seus valores iniciais. 
+    Isso significa que ele remove todos os estilos que foram aplicados ao elemento, incluindo estilos herdados, 
+    e o redefine com os valores padrão. */
+    background-color: var(--misturado-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: var(--font-family);
+    padding: var(--module-size) calc(var(--module-size) * 2);
+}

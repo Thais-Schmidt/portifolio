@@ -1,0 +1,18 @@
+
+:root{
+    --second-color: #824670;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+}
+
+.first{
+    --color-divFirst: #BDA0BC;
+    background-color: var(--color-divFirst);
+}
+
+.second{
+    background-color: var(--second-color);
+}

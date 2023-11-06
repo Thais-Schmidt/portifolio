@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <header>
+        <a class="portifolio" href="#">Meu portifolio!</a>
+
+        <nav class="navbar" id="dropMenu">
+            <ul id="drop">
+                <li><a href="#">Apresentação</a></li>
+                <li><a>Meus projetos</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="bloco">
+
+        <div id="formulario_bloco">
+
+            <form id="form" method="post" action="#">
+
+                <label for="nome_completo">Nome completo: *</label>
+                <input type="text" name="nome_completo" id="nome_completo" autocomplete="name" required>
+
+                <label for="tel_cliente">Celular para contato: *</label>
+                <div id="numero">
+                    <select class="form-select" id="specificSizeSelect">
+                        <option selected required>(+ddd)</option>
+                        <option id="brasil">Brasil (+55)</option>
+                        <option id="eua">E.U.A. (+ 1)</option>
+                        <option id="japao">Japão (+81)</option>
+                    </select>
+                    <input type="text" name="tel" id="ddd" maxlength="3" required>
+                    <input type="tel" name="telDDD" id="tel_cliente" autocomplete="telDDD" maxlength="10"
+                        placeholder="xxxxxxxxx" required>
+                </div>
+
+                <label for="email">Email: *</label><span id="text"></span>
+                <input type="text" name="email" id="email" autocomplete="email" onkeydown="validando()" required>
+
+                <!-- Usar API -->
+
+                <label for="cep"> C.E.P: *</label>
+                <input type="text" name="cep" id="cep" maxlength="8" required>
+
+                <label for="logradrouro">Rua: *</label>
+                <input type="text" name="logradrouro" id="logradouro" required>
+
+                <div id="inf1">
+                    <label for="bairro" id="escritoBairro">Bairro: *</label>
+                    <label for="numero">Nº: *</label>
+                </div>
+
+                <div id="inf1-1">
+                    <input type="text" name="bairro" id="bairro" required>
+                    <input type="text" name="numero" id="numero" required>
+                </div>
+
+                <div id="inf2">
+                    <label for="cidade" id="escritoCidade">Cidade: *</label>
+                    <label for="estado">Estado: *</label>
+                </div>
+
+                <div id="inf2-1">
+                    <input type="text" name="cidade" id="cidade" required>
+                    <input type="text" name="estado" id="estado" required>
+                </div>
+
+                <!-- Botao -->
+
+                <input id="btn" type="submit" value="Enviar">
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p id="descFooter">Projetos e testes com o intuito de melhorar meu aprendizado em <br>Javascript, HTML e CSS.</p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* cores*/
+    --color-one: #BC5966;
+    --color-two: #DFD899;
+    --color-tree: #F7F5D6;
+    --color-four: #C8C2B2;
+    --color-five: #744855;
+    --color-six: #7AC3B7;
+    --color-seven: #286A6E;
+    --color-eight: #E4764F;
+    --color-nine: #F7F7F8;
+
+    /*fontes*/ 
+    --font-famyly: "Andale Mono", monospace;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--color-nine);
+    min-height: 100%;
+}
+
+header {
+    background-color: var(--color-one);
+    
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-family: var(--font-famyly);
+
+    z-index: 100;
+}
+
+.portifolio {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: var(--font-famyly);
+
+    text-decoration: none;
+
+    color: var(--color-nine);
+}
+
+.navbar a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-nine);
+    text-decoration: none;
+}
+
+
+/* dropdown */
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: var(--color-nine);
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    height: 180px;
+    width: 100%;
+    background-color: var(--color-one);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: var(--color-nine);
+    color: var(--color-one);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+/*fim do drop down*/
+
+/*formulario*/
+
+.bloco{
+
+    background-color: rgb(253, 210, 110);
+
+    height: 670px;
+    width: 500px;
+
+    margin: 40px auto 40px auto;
+
+    display: grid;
+
+    justify-content: center;
+    align-content: center;
+
+    gap: 10px;
+}
+
+form{
+    display: grid;
+    padding: 20px 20px 20px 20px;
+    width: 660px;
+}
+
+#formulario_bloco{
+    background-color: white;
+    width: 360px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+
+    text-align: center;
+
+    color: rgb(237, 102, 117);
+
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+label{
+    color: #969696;
+
+    font-family: sans-serif;
+    text-align: justify;
+
+}
+
+input, select{
+    border-color: #C8C8C8;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 20px;
+
+    padding: 6px;
+
+    font-family: monospace;
+
+    height: 30px;
+
+    margin: 5px 0px 10px 0px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 1px 12px 5px -12px inset;
+}
+
+#numero{
+    display: flex;
+    flex-direction: row;
+    gap: -8vh;
+}
+
+#ddd{
+    width: 35px;
+    margin: 5px 5px 0px 5px;
+    text-align: center;
+}
+
+#btn{
+    background-color: #1AB1AB;
+
+    color: white;
+
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    width: 323px;
+    height: 29px;
+
+    border-radius: 30px;
+    border: none;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+}
+
+#tel_cliente{
+    width: 100px;
+    text-align: center;
+}
+
+#nome_completo{
+    width: 323px;
+}
+
+#email{
+    width: 323px;
+}
+
+#cep{
+    width: 100px;
+    text-align: center;
+}
+
+#estado{
+    width: 50px;
+    text-align: center;
+}
+
+#numero{
+    width: 50px;
+    text-align: center;
+}
+
+#inf1{
+    display: flex;
+    flex-direction: row;
+}
+
+#escritoBairro{
+    padding-right: 215px;
+}
+
+#inf1-1{
+    display: flex;
+    flex-direction: row;
+}
+
+#logradouro{
+    width: 323px;
+}
+
+#bairro{
+    width: 250px;
+    margin-right: 23px;
+}
+
+#cidade{
+    width: 169px;
+    text-align: center;
+    margin-right: 7px;
+}
+
+#escritoCidade{
+    padding-right: 109px;
+}
+
+/* footer*/ 
+
+footer {
+    background: var(--color-one);
+
+    width: 100%;
+    margin-top: auto;
+    
+    align-items: center;
+    text-align: center;
+}
+
+#descFooter{
+    padding: 20px 100px;
+    color: var(--color-nine);
+    font-family: var(--font-famyly);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer*/ 
+
+footer {
+    background-color: var(--color-one);
+    color: var(--color-nine);
+    display: block;
+
+    height: auto;
+    width: 100%;
+    margin-top: auto;
+    
+    font-family: var(--font-famyly);
+    align-items: center;
+    text-align: center;
+}
+
+p{
+    padding: 20px 100px;
+}

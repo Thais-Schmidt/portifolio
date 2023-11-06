@@ -1,0 +1,8 @@
+Para conseguir rodar o app.js no nodemon precisa colocar
+os seguintes comandos no powershell antes de mais nada
+
+Get-ExecutionPolicy
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Default
