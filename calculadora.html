@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box {
+            background-color: deeppink;
+
+            border-radius: 20px;
+
+            height: ;
+            width: 300px;
+
+            box-shadow: 5px 6px 0px -1px rgb(187, 55, 121);
+        }
+
+        .btns {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .btn {
+            background-color: hotpink;
+            color: #fafafa;
+            border-radius: 25px;
+
+            height: 57px;
+            width: 60px;
+
+            margin-top: 12px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0px 4px 0px -1px rgb(187, 55, 121);
+        }
+
+        .btn:active {
+            transform: translateY(2px);
+            box-shadow: none;
+        }
+
+        input {
+            font-size: 20px;
+            margin: 2px 2px;
+
+            text-align: center;
+            border: none;
+        }
+
+        #btn-meio {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        #visor {
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+
+            background-color: hotpink;
+
+            border-radius: 20px;
+
+            padding: 20px 40px 30px 30px;
+            margin: 15px auto -5px auto;
+
+            width: 200px;
+            height: 100px;
+        }
+
+        #tela{
+            width:210px;
+            height: 100px;
+            color: white;
+
+            font-size: xx-large;
+
+            text-align: end;
+            background:none;
+        }
+
+    </style>
+
+    <h1>Calculadora Basica</h1>
+
+    <div class="box">
+
+        <div id="visor">
+            <input type="text" name="tela" id="tela" disabled>
+        </div>
+
+        <div class="btns">
+
+            <div id="btn-3">
+                <input type="button" value="C" class="btn" id="C" onclick="tela.value = '' ">
+                <input type="button" value="←" class="btn" id="←" onclick="tela.value = tela.value.toString().slice(0,-1)"> <!-- toString() converte o valor obtido para uma string, e slice(0, -1) apaga os caracteres da posição 0 até o penúltimo caractere -->
+                <input type="button" value="/" class="btn" id="/" onclick="tela.value += '/'">
+            </div>
+
+            <div id="btn-meio">
+                <input type="button" value="7" class="btn" id="7" onclick="tela.value += 7">
+                <input type="button" value="8" class="btn" id="8" onclick="tela.value += 8">
+                <input type="button" value="9" class="btn" id="9" onclick="tela.value += 9">
+                <input type="button" value="X" class="btn" id="X" onclick="tela.value += '*'">
+                <input type="button" value="4" class="btn" id="4" onclick="tela.value += 4">
+                <input type="button" value="5" class="btn" id="5" onclick="tela.value += 5">
+                <input type="button" value="6" class="btn" id="6" onclick="tela.value += 6">
+                <input type="button" value="-" class="btn" id="-" onclick="tela.value += '-'">
+                <input type="button" value="1" class="btn" id="1" onclick="tela.value += 1">
+                <input type="button" value="2" class="btn" id="2" onclick="tela.value += 2">
+                <input type="button" value="3" class="btn" id="3" onclick="tela.value += 3">
+                <input type="button" value="+" class="btn" id="+" onclick="tela.value += '+'">
+            </div>
+
+            <div id="btn-3">
+                <input type="button" value="0" class="btn" id="0" onclick="tela.value += 0">
+                <input type="button" value="." class="btn" id="." onclick="tela.value += '.'">
+                <input type="button" value="=" class="btn" id="=" onclick="tela.value = eval(tela.value)"> <!-- eval() identifica a expressao na tela e retorna o resultado  -->
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
